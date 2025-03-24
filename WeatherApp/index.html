@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+            <button id="location-btn"><i class="fas fa-location-arrow"></i></button>
+        </div>
+        
+        <div class="weather-container">
+            <div class="weather-header">
+                <h1 id="city-name">--</h1>
+                <p id="current-date">--</p>
+            </div>
+            
+            <div class="weather-main">
+                <div class="temperature">
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon">
+                    <h2 id="temp">--°C</h2>
+                </div>
+                <div class="weather-details">
+                    <p id="weather-desc">--</p>
+                    <p>Humidity: <span id="humidity">--%</span></p>
+                    <p>Wind: <span id="wind">-- km/h</span></p>
+                </div>
+            </div>
+            
+            <div class="weather-forecast" id="forecast">
+                <!-- Forecast items will be added here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
